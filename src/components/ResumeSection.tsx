@@ -5,7 +5,7 @@ const Resume = () => {
     return (
         <div className="text-[1rem]">
               <Link
-                href={"/resume.pdf"}
+                href={"/resume1.pdf"}
                 target="_blank"
                 className="flex items-center hover:text-teal-300"
               >

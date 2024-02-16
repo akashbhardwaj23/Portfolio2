@@ -1,7 +1,7 @@
 
 
 import List from "./List"
-import Resume from "./Resume"
+import Resume from "./ResumeSection"
 
 const MyProject = () => {
     return (
