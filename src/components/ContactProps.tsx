@@ -10,7 +10,7 @@ const ContactProps = () => {
           <img
             src="https://d33wubrfki0l68.cloudfront.net/7f29579dde49e02480372aa49f7189c5536b0118/34b92/assets/png/linkedin-ico.png"
             alt=""
-            className="mr-4 md:w-10 h-6 w-4"
+            className="mr-4 md:w-10 w-4"
           />
         </Link>
         <Link href={"https://github.com/akash23-ai"}>
