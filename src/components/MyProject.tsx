@@ -1,6 +1,6 @@
 
 
-import List from "./List"
+import ListPage from "./ListPage"
 import Resume from "./ResumeSection"
 
 const MyProject = () => {
@@ -11,7 +11,7 @@ const MyProject = () => {
             You Can See All My Personal Project As Well as Work Projects Here
           </div>
 
-          <List />
+          <ListPage />
           <Resume />
         </div>
       </div>

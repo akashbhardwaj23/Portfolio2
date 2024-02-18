@@ -33,6 +33,7 @@ const List = () => {
                 alt="Site"
                 width={40}
                 height={40}
+                className="mix-blend-color-dodge"
               />
               <h1 className="z-10 sm:order-2 sm:col-span-6 cursor-pointer text-lg ">
                 Previous PortFolio
