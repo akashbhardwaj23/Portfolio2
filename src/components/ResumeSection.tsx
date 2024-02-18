@@ -3,7 +3,7 @@ import Link from "next/link"
 
 const Resume = () => {
     return (
-        <div className="text-[1rem]">
+        <div className="text-[1rem] pb-6 md:pb-0">
               <Link
                 href={"/resume1.pdf"}
                 target="_blank"

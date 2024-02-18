@@ -21,7 +21,7 @@ const Intro = () => {
       ]);
     return (
         <div className="w-[82%]">
-            <div className="pt-20">
+            <div className="md:pt-20 pt-6">
               <h1 className="text-5xl mb-2">Akash Bhardwaj</h1>
               <h2 className="text-2xl">WebDev Engineer</h2>
             </div>
