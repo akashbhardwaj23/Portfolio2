@@ -1,17 +1,18 @@
 "use clientt"
 
 
-import Intro from "@/components/Intro";
+import IntroPage from "@/components/IntroPage";
 import MyProject from "@/components/MyProject";
 
 export default function Home() {
 
   
   return (
-    <div className="min-h-full md:flex justify-center">
-      <div className="w-[85%] min-h-full h-screen grid md:grid-cols-12 grid-cols-1">
+    <div className=" md:flex justify-center">
+      <div className="pointer-events-none fixed inset-0 z-30 transition duration-300 lg:absolute" style={{background: "radial-gradient(600px at 275px 3234.4px, rgba(29, 78, 216, 0.15), transparent 80%;", backgroundColor: "red"}}></div>
+      <div className="w-[85%] grid md:grid-cols-12 grid-cols-1" >
         <div className="md:col-span-6 flex justify-end">
-          <Intro />
+          <IntroPage />
         </div>
         <MyProject />
       </div>
