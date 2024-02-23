@@ -81,7 +81,7 @@ const IntroPage = () => {
         {skills.map((skill, index) => (
           <div key={index} className="m-2">
             <Button
-              borderRadius="1.75rem"
+              borderRadius="0.375rem"
               className="bg-white  dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800"
               borderClassName={`${skill.color}`}
             >
