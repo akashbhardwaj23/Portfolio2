@@ -19,4 +19,8 @@ export const themeKeys = Object.keys(theme);
 
 console.log(themeKeys)
 
-console.log(theme[themeKeys[0] as keyof typeof theme])
+// console.log(theme[themeKeys[0]])
+
+export interface Theme {
+    [key: string]: string;
+  }
