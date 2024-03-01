@@ -2,72 +2,99 @@
 
 import { useState } from "react";
 import ContactProps from "./ContactProps";
-import { Button } from "./ui/border";
+import { Border } from "./ui/border";
+import Image from "next/image";
 import { theme, themeKeys, Theme } from "@/themes/theme";
+import { HoverEffect } from "./ui/card-hover-effect";
 
 // Need to use this import file
 
 const IntroPage = () => {
   const [skills, setSkills] = useState([
     {
-      myskill: "HTML",
-      color: "bg-[#EF4444]",
-    },
-    {
-      myskill: "CSS",
-      color: "bg-[#F97316]",
+      myskill : "TypeScript", 
+      color : "bg-[#EF4444]",
+      logo : "/typescript.png"
     },
     {
       myskill: "Javascript",
       color: "bg-[#F59E0B]",
+      logo : "/javascript.png"
     },
     {
       myskill: "React",
       color: "bg-[#EAB308]",
+      logo: "/react.png"
     },
     {
       myskill: "Tailwind CSS",
       color: "bg-[#84CC16]",
+      logo : "/tailwind-css.png"
     },
     {
       myskill: "Git",
       color: "bg-[#22C55E]",
+      logo : "/git.png"
     },
     {
       myskill: "GITHUB",
       color: "bg-[#10B981]",
+      logo : "/github.png",
+    },
+    {
+      myskill: "HTML",
+      color: "bg-[#EF4444]",
+      logo : "/html.png"
+    },
+    {
+      myskill: "CSS",
+      color: "bg-[#F97316]",
+      logo : "/css.png"
     },
     {
       myskill: "Node.js",
       color: "bg-[#14B8A6]",
+      logo : "/nodejs.png"
     },
     {
       myskill: "Express.js",
       color: "bg-[#06B6D4]",
+      logo : "/express.png"
     },
     {
       myskill: "Java",
       color: "bg-[#0EA5E9]",
+      logo : "/java.png"
     },
     {
       myskill: "Python",
       color: "bg-[#3B82F6]",
+      logo : "/python.png"
     },
     {
       myskill: "Ethical Hacking",
       color: "bg-[#8B5CF6]",
+      logo : "/hacking.png"
     },
     {
       myskill: "SQL",
       color: "bg-[#A855F7]",
+      logo : "/sql.png"
+    },
+    {
+      myskill : "PostgreSQL",
+      color : "bg-[#D946EF]",
+      logo : "/postgresql.png"
     },
     {
       myskill: "MongoDB",
       color: "bg-[#D946EF]",
+      logo  : "/mongodb.png"
     },
     {
       myskill: "CLI",
       color: "bg-[#EF4444]",
+      logo : "/cli.png"
     },
   ]);
   return (
@@ -77,16 +104,18 @@ const IntroPage = () => {
         <h2 className="text-2xl">WebDev Engineer</h2>
       </div>
 
-      <div className="flex flex-wrap mt-12 mb-12">
+      <div className="grid grid-cols-2 lg:grid-cols-3 mt-12 mb-12 md:gap-1 gap-0">
         {skills.map((skill, index) => (
           <div key={index} className="m-2">
-            <Button
+          
+            <Border
               borderRadius="0.375rem"
-              className="bg-white  dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800"
+              className="bg-white  dark:bg-slate-900 text-black dark:text-white  dark:border-slate-800"
               borderClassName={`${skill.color}`}
             >
+               <Image src={skill.logo} alt= {skill.myskill} width={20} height={20} className="mr-2"/>
               {skill.myskill}
-            </Button>
+            </Border>
           </div>
         ))}
       </div>

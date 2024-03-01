@@ -10,7 +10,7 @@ import {
 import { useRef } from "react";
 import { cn } from "@/lib/util/cn";
 
-export function Button({
+export function Border({
   borderRadius = "1.75rem",
   children,
   as: Component = "button",
