@@ -98,7 +98,7 @@ const IntroPage = () => {
     },
   ]);
   return (
-    <div className="w-[85%]">
+    <div className="md:w-[85%] w-[95%]">
       <div className="md:pt-20 pt-6">
         <h1 className="text-5xl mb-2">Akash Bhardwaj</h1>
         <h2 className="text-2xl">WebDev Engineer</h2>
