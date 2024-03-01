@@ -98,7 +98,7 @@ const IntroPage = () => {
     },
   ]);
   return (
-    <div className="w-[82%]">
+    <div className="w-[85%]">
       <div className="md:pt-20 pt-6">
         <h1 className="text-5xl mb-2">Akash Bhardwaj</h1>
         <h2 className="text-2xl">WebDev Engineer</h2>
@@ -106,10 +106,10 @@ const IntroPage = () => {
 
       <div className="grid grid-cols-2 lg:grid-cols-3 mt-12 mb-12 md:gap-1 gap-0">
         {skills.map((skill, index) => (
-          <div key={index} className="m-2">
+          <div key={index} className="m-1">
           
             <Border
-              borderRadius="0.375rem"
+              borderRadius="0.775rem"
               className="bg-white  dark:bg-slate-900 text-black dark:text-white  dark:border-slate-800"
               borderClassName={`${skill.color}`}
             >
