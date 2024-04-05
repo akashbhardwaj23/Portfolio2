@@ -101,7 +101,7 @@ const IntroPage = () => {
     <div className="md:w-[85%] w-[95%]">
       <div className="md:pt-20 pt-6">
         <h1 className="text-5xl mb-2">Akash Bhardwaj</h1>
-        <h2 className="text-2xl">WebDev Engineer</h2>
+        <h2 className="text-2xl">Web-Developer</h2>
       </div>
 
       <div className="grid grid-cols-2 lg:grid-cols-3 mt-12 mb-12 md:gap-1 gap-0">
