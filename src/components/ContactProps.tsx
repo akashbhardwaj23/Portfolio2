@@ -13,7 +13,7 @@ const ContactProps = () => {
             className="mr-4 md:w-10 w-6"
           />
         </Link>
-        <Link href={"https://github.com/akash23-ai"}>
+        <Link href={"https://github.com/akashbhardwaj23"}>
           <img src="/github.png" alt="" className="mr-4 md:w-10 w-6" />
         </Link>
         <Link
