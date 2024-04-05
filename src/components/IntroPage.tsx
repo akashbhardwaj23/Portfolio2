@@ -59,37 +59,37 @@ const IntroPage = () => {
     {
       myskill: "Express.js",
       color: "bg-[#06B6D4]",
-      logo : "/express.png"
+      logo : "/express.svg"
     },
     {
       myskill: "Java",
       color: "bg-[#0EA5E9]",
-      logo : "/java.png"
+      logo : "/java.svg"
     },
     {
       myskill: "Python",
       color: "bg-[#3B82F6]",
-      logo : "/python.png"
+      logo : "/python.svg"
     },
     {
       myskill: "Ethical Hacking",
       color: "bg-[#8B5CF6]",
-      logo : "/hacking.png"
+      logo : "/ethical-hacking.jpg"
     },
     {
       myskill: "SQL",
       color: "bg-[#A855F7]",
-      logo : "/sql.png"
+      logo : "/sql.svg"
     },
     {
       myskill : "PostgreSQL",
       color : "bg-[#D946EF]",
-      logo : "/postgresql.png"
+      logo : "/postgresql.svg"
     },
     {
       myskill: "MongoDB",
       color: "bg-[#D946EF]",
-      logo  : "/mongodb.png"
+      logo  : "/mongodb.svg"
     },
     {
       myskill: "CLI",
