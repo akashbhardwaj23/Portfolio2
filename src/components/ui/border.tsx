@@ -32,7 +32,7 @@ export function Border({
   return (
     <Component
       className={cn(
-        "bg-transparent relative text-xl  h-14 w-40 p-[1px] overflow-hidden ",
+        "bg-transparent relative text-xl  h-20 w-40 p-[1px] overflow-hidden ",
         containerClassName
       )}
       style={{
@@ -57,7 +57,7 @@ export function Border({
       <div
         className={cn(
           "relative bg-slate-900/[0.8] border border-slate-800 backdrop-blur-xl text-white flex items-center justify-center w-full h-full text-sm antialiased",
-          className
+          className 
         )}
         style={{
           borderRadius: `calc(${borderRadius} * 0.96)`,

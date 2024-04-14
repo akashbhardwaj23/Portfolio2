@@ -99,22 +99,26 @@ const IntroPage = () => {
   ]);
   return (
     <div className="md:w-[85%] w-[95%]">
-      <div className="md:pt-20 pt-6">
+      <div className="md:pt-12 pt-6">
         <h1 className="text-5xl mb-2">Akash Bhardwaj</h1>
         <h2 className="text-2xl">Web-Developer</h2>
       </div>
 
-      <div className="grid grid-cols-2 lg:grid-cols-3 mt-12 mb-12 md:gap-1 gap-0">
+      <div className="grid grid-cols-2 lg:grid-cols-3 mt-8 mb-12 md:gap-1 gap-0">
         {skills.map((skill, index) => (
-          <div key={index} className="m-1">
+          <div key={index} className="m-1 flex justify-center w-[90%]">
           
             <Border
-              borderRadius="0.775rem"
-              className="bg-white  dark:bg-slate-900 text-black dark:text-white  dark:border-slate-800"
+              borderRadius="0.475rem"
+              className="bg-white  dark:bg-slate-900 text-black dark:text-white  dark:border-slate-700"
               borderClassName={`${skill.color}`}
             >
-               <Image src={skill.logo} alt= {skill.myskill} width={20} height={20} className="mr-2"/>
+               <div className="flex flex-col justify-center items-center">
+               <Image src={skill.logo} alt= {skill.myskill} width={20} height={20} className="mr-2 mb-2"/>
+              <div className="flex">
               {skill.myskill}
+              </div>
+               </div>
             </Border>
           </div>
         ))}

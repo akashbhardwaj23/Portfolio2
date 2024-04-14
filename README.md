@@ -1,6 +1,14 @@
 
 
-## My PortFolio 
+# My PortFolio 
+
+## Run The Development Server
+
+Run - ```
+        npm install
+        ```
+
+
 
 Run the Server Using Any of the command
 
