@@ -106,7 +106,7 @@ const IntroPage = () => {
 
       <div className="grid grid-cols-2 lg:grid-cols-3 mt-8 mb-12 md:gap-1 gap-0">
         {skills.map((skill, index) => (
-          <div key={index} className="m-1 flex justify-center w-[90%]">
+          <div key={index} className="m-1 w-[80%]">
           
             <Border
               borderRadius="0.475rem"
