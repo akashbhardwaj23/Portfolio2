@@ -12,89 +12,94 @@ import { HoverEffect } from "./ui/card-hover-effect";
 const IntroPage = () => {
   const [skills, setSkills] = useState([
     {
-      myskill : "TypeScript", 
-      color : "bg-[#EF4444]",
-      logo : "/typescript.png"
+      myskill: "TypeScript",
+      color: "bg-[#EF4444]",
+      logo: "/typescript.png",
     },
     {
       myskill: "Javascript",
       color: "bg-[#F59E0B]",
-      logo : "/javascript.png"
+      logo: "/javascript.png",
     },
     {
       myskill: "React",
       color: "bg-[#EAB308]",
-      logo: "/react.png"
+      logo: "/reactjs.png",
     },
     {
       myskill: "Tailwind CSS",
       color: "bg-[#84CC16]",
-      logo : "/tailwind-css.png"
+      logo: "/tailwind-css.png",
     },
     {
       myskill: "Git",
       color: "bg-[#22C55E]",
-      logo : "/git.png"
+      logo: "/git.png",
     },
     {
       myskill: "GITHUB",
       color: "bg-[#10B981]",
-      logo : "/github.png",
+      logo: "/github.png",
     },
     {
       myskill: "HTML",
       color: "bg-[#EF4444]",
-      logo : "/html.png"
+      logo: "/html.png",
     },
     {
       myskill: "CSS",
       color: "bg-[#F97316]",
-      logo : "/css.png"
+      logo: "/css.png",
     },
     {
       myskill: "Node.js",
       color: "bg-[#14B8A6]",
-      logo : "/nodejs.png"
+      logo: "/nodejs.png",
     },
     {
       myskill: "Express.js",
       color: "bg-[#06B6D4]",
-      logo : "/express.svg"
+      logo: "/express.svg",
     },
     {
       myskill: "Java",
       color: "bg-[#0EA5E9]",
-      logo : "/java.svg"
+      logo: "/java.svg",
     },
     {
       myskill: "Python",
       color: "bg-[#3B82F6]",
-      logo : "/python.svg"
+      logo: "/python.svg",
     },
     {
       myskill: "Ethical Hacking",
       color: "bg-[#8B5CF6]",
-      logo : "/ethical-hacking.jpg"
+      logo: "/ethical-hacking.jpg",
     },
     {
       myskill: "SQL",
       color: "bg-[#A855F7]",
-      logo : "/sql.svg"
+      logo: "/sql.svg",
     },
     {
-      myskill : "PostgreSQL",
-      color : "bg-[#D946EF]",
-      logo : "/postgresql.svg"
+      myskill: "NextJs",
+      color : "bg-[#0EA5E9]",
+      logo : "/nextjs.svg",
+    },
+    {
+      myskill: "PostgreSQL",
+      color: "bg-[#D946EF]",
+      logo: "/postgresql.svg",
     },
     {
       myskill: "MongoDB",
       color: "bg-[#D946EF]",
-      logo  : "/mongodb.svg"
+      logo: "/mongodb.svg",
     },
     {
       myskill: "CLI",
       color: "bg-[#EF4444]",
-      logo : "/cli.png"
+      logo: "/cli.png",
     },
   ]);
   return (
@@ -106,19 +111,24 @@ const IntroPage = () => {
 
       <div className="grid grid-cols-2 lg:grid-cols-3 mt-8 mb-12 md:gap-1 gap-0">
         {skills.map((skill, index) => (
-          <div key={index} className="m-1 w-[80%]">
-          
+          <div key={index} className="mt-1 mx-1 w-[80%]">
             <Border
               borderRadius="0.475rem"
               className="bg-white  dark:bg-slate-900 text-black dark:text-white  dark:border-slate-700"
               borderClassName={`${skill.color}`}
             >
-               <div className="flex flex-col justify-center items-center">
-               <Image src={skill.logo} alt= {skill.myskill} width={20} height={20} className="mr-2 mb-2"/>
-              <div className="flex">
-              {skill.myskill}
+              <div className="flex flex-col justify-end items-center w-full h-full">
+                <Image
+                  src={skill.logo}
+                  alt={skill.myskill || "logo"}
+                  width={20}
+                  height={20}
+                  className="mr-2 mb-2"
+                />
+                <div className={`flex ${skill.color} w-full h-1/2 rounded-b-md justify-center items-center`}>
+                  {skill.myskill}
+                </div>
               </div>
-               </div>
             </Border>
           </div>
         ))}
