@@ -17,6 +17,7 @@ import {
   SiMongodb,
   SiNextdotjs,
 } from "react-icons/si";
+import { AiOutlineJava } from "react-icons/ai";
 
 import { Terminal, Shield } from "lucide-react";
 import { useEffect, useState } from "react";
@@ -43,7 +44,7 @@ export default function SkillsPage(){
       { name: "CSS", icon: SiCss3 },
       { name: "Node.js", icon: SiNodedotjs },
       { name: "Express", icon: SiExpress },
-      { name: "Java", icon: SiExpress },
+      { name: "Java", icon: AiOutlineJava },
       { name: "Python", icon: SiPython },
       { name: "Eth. Hacking", icon: Shield },
       { name: "SQL", icon: SiPostgresql },
