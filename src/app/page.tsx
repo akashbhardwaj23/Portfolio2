@@ -1,21 +1,18 @@
 "use clientt"
 
 
-import IntroPage from "@/components/IntroPage";
-import MyProject from "@/components/MyProject";
+import Background from "@/components/Background";
+import IntroPage from "@/components/pages/IntroPage";
 
 export default function Home() {
 
   
   return (
-    <div className=" md:flex md:justify-center md:overflow-x-hidden">
-      <div className="pointer-events-none fixed inset-0 z-30 transition duration-300 lg:absolute" style={{background: "radial-gradient(600px at 275px 3234.4px, rgba(29, 78, 216, 0.15), transparent 80%", backgroundColor: "red"}}></div>
-      <div className="w-[98%] grid md:grid-cols-12 grid-cols-1" >
-        <div className="md:col-span-6 flex md:justify-end justify-center">
-          <IntroPage />
-        </div>
-        <MyProject />
-      </div>
+    <div className="min-h-screen bg-[#1a1a1a] text-[#33ff33] p-8 font-['VT323',monospace] overflow-hidden">
+       <div className="max-w-7xl mx-auto">
+        <IntroPage />
+       </div>
+       <Background />
     </div>
   );
 }

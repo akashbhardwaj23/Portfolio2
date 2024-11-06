@@ -1,7 +1,7 @@
-import Link from "next/link";
-import Image from "next/image";
+import Link from "next/link"
 
-const ContactProps = () => {
+
+const ContactPage= () => {
   return (
     <div className="flex flex-col md:gap-2 mb-4">
       <div className="p-2 md:p-0">Connect With Me</div>
@@ -39,4 +39,4 @@ const ContactProps = () => {
   );
 };
 
-export default ContactProps;
+export default ContactPage;
