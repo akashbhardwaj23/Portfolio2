@@ -1,4 +1,5 @@
-import Background from "@/components/background";
+
+import Background from "@/components/backgroundcomponent";
 import IntroComponent from "@/components/intro";
 
 export default function Home() {
