@@ -1,6 +1,7 @@
 "use client"
 
 import { IconType } from "react-icons";
+
 import {
   SiTypescript,
   SiJavascript,
@@ -18,9 +19,9 @@ import {
   SiNextdotjs,
 } from "react-icons/si";
 import { AiOutlineJava } from "react-icons/ai";
-
 import { Terminal, Shield } from "lucide-react";
-import { useEffect, useState } from "react";
+
+import { motion, useAnimate, useSpring } from "motion/react"
 
 
 
@@ -31,7 +32,7 @@ interface Skill {
 
 
 export default function Skills(){
-    const [activeSkill, setActiveSkill] = useState<number | null>(null);
+    // const [activeSkill, setActiveSkill] = useState<number | null>(null);
   
     const skills: Skill[] = [
       { name: "TypeScript", icon: SiTypescript },
@@ -54,16 +55,6 @@ export default function Skills(){
       { name: "CLI", icon: Terminal },
     ];
 
-    useEffect(() => {
-      const interval = setInterval(() => {
-        setActiveSkill((prev) =>
-          prev === null || prev === skills.length - 1 ? 0 : prev + 1
-        );
-      }, 2000);
-      return () => clearInterval(interval);
-    }, [skills.length]);
-  
-
 
     return (
       <div className="bg-[#000000] border-2 border-[#33ff33] p-4">
@@ -71,13 +62,11 @@ export default function Skills(){
             {skills.map((skill, index) => (
               <div
                 key={index}
-                className={`relative bg-[#000000] border border-[#33ff33] p-3 flex items-center transition-all duration-300 ${
-                  activeSkill === index ? "animate-pulse" : ""
-                }`}
+                className={`relative bg-[#000000] border border-[#33ff33] p-3 flex items-center transition-all duration-300 `}
               >
-                <div className="w-8 h-8 mr-3 flex items-center justify-center bg-[#33ff33] rounded-full">
+                <motion.div className="w-8 h-8 mr-3 flex items-center justify-center bg-[#33ff33] rounded-full">
                   <skill.icon className="w-5 h-5 text-[#000000]" />
-                </div>
+                </motion.div>
                 <span className="text-sm text-[#33ff33]">{skill.name}</span>
                 <div className="absolute inset-0 bg-[#33ff33] opacity-0 hover:opacity-20 transition-opacity duration-300"></div>
               </div>
