@@ -25,7 +25,7 @@ interface Skill {
   icon: IconType | typeof Terminal | typeof Shield;
 }
 
-export default function Component() {
+export default function HomePage() {
   const [activeSkill, setActiveSkill] = useState<number | null>(null);
 
   const skills: Skill[] = [

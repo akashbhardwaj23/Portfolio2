@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const ResumePage = () => {
+const ResumeComponent = () => {
   return (
     <div className="text-[1rem] pb-6 md:pb-0">
       <Link
@@ -17,4 +17,4 @@ const ResumePage = () => {
   );
 };
 
-export default ResumePage;
+export default ResumeComponent;

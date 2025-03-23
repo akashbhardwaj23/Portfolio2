@@ -1,8 +1,7 @@
 "use client"
 import { TextGenerateEffect } from "../ui/textgenerator"
 
-
-const MyProject = () => {
+const ProjectComponent = () => {
     return (
           <div>
             <TextGenerateEffect className="text-[#33ff33]" words="You Can See All My Personal Project As Well as Work Projects Here - " />
@@ -10,4 +9,4 @@ const MyProject = () => {
     )
 }
 
-export default MyProject
+export default ProjectComponent

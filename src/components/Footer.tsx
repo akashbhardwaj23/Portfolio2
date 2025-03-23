@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { SiGithub } from "react-icons/si";
-import ResumePage from "./ResumePage";
+import ResumeComponent from "./pages/Resume";
 
-const PrevoiusPage = () => {
+const Footer = () => {
   return (
     <div className="mt-6 flex flex-col md:flex-row justify-between items-start md:items-center space-y-4 md:space-y-0">
      
@@ -19,9 +19,9 @@ const PrevoiusPage = () => {
     >
       Previous PortFolio
     </Link>
-    <ResumePage/>
+    <ResumeComponent/>
   </div>
   );
 };
 
-export default PrevoiusPage;
+export default Footer;

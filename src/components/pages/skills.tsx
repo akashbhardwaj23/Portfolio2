@@ -30,7 +30,7 @@ interface Skill {
 }
 
 
-export default function SkillsPage(){
+export default function Skills(){
     const [activeSkill, setActiveSkill] = useState<number | null>(null);
   
     const skills: Skill[] = [
