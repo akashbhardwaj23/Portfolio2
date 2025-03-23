@@ -1,6 +1,5 @@
 import Link from "next/link"
 
-
 const contactItems = [
   {
     name : "linkedIn",
@@ -23,7 +22,6 @@ const contactItems = [
     imgsrc : 'https://d33wubrfki0l68.cloudfront.net/493f1aa6da674c05bc606ba5b9e8092b881e8626/67c76/assets/png/yt-ico.png'
   }
 ]
-
 
 const Contact= () => {
   return (

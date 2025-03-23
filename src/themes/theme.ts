@@ -17,10 +17,6 @@ export const theme = {
 
 export const themeKeys = Object.keys(theme);
 
-console.log(themeKeys)
-
-// console.log(theme[themeKeys[0]])
-
 export interface Theme {
     [key: string]: string;
   }
