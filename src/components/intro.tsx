@@ -1,5 +1,5 @@
 import Skills from "./pages/skills";
-import Footer from "./footer";
+import Footer from "./footercomponent";
 import Project from "./pages/projects";
 import Contact from "./pages/contact";
 
