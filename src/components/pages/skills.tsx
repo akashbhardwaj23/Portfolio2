@@ -33,7 +33,9 @@ export default function Skills(){
                 }}>
                   <skill.icon className="w-5 h-5 text-[#000000] hover:z-50 hover:bg-white" />
                 </motion.div>
-                <span className="text-sm text-[#33ff33]">{skill.name}</span>
+                <motion.span className="text-sm text-[#33ff33]" animate = {{
+                  scale : hoveredId === index ? 1.5 : 1
+                }}>{skill.name}</motion.span>
                 <div className="absolute inset-0 bg-[#33ff33] opacity-0 hover:opacity-20 transition-opacity duration-300"></div>
               </motion.div>
             ))}

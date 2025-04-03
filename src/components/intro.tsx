@@ -8,10 +8,10 @@ const IntroComponent = () => {
     <div className="max-w-7xl mx-auto">
       <div className="flex justify-between items-center mb-12 bg-[#000000] border-2 border-[#33ff33] p-4">
         <div>
-          <h1 className="text-2xl md:text-4xl font-bold mb-2 text-[#33ff33]">
+          <h1 className="underline-text text-2xl md:text-4xl font-bold mb-2 text-[#33ff33]">
             Akash Bhardwaj
           </h1>
-          <p className="text-lg md:text-xl text-[#33ff33]">Web-Developer</p>
+          <p className="text-lg md:text-xl text-[#33ff33]">Web-Developer, Web3 Developer</p>
         </div>
         <div>
             <Contact />

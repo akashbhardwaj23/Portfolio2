@@ -15,6 +15,8 @@ import {
   SiPostgresql,
   SiMongodb,
   SiNextdotjs,
+  SiGo,
+  SiSolana,
 } from "react-icons/si";
 import { AiOutlineJava } from "react-icons/ai";
 import { Terminal, Shield } from "lucide-react";
@@ -27,13 +29,14 @@ export interface SkillType {
   }
 
 export const skills: SkillType[] = [
+    {name : "GoLang", icon : SiGo },
     { name: "TypeScript", icon: SiTypescript },
     { name: "Javascript", icon: SiJavascript },
     { name: "React", icon: SiReact },
     { name: "Tailwind", icon: SiTailwindcss },
     { name: "Git", icon: SiGit },
     { name: "GitHub", icon: SiGithub },
-    { name: "HTML", icon: SiHtml5 },
+    { name : "Solana", icon: SiSolana },
     { name: "CSS", icon: SiCss3 },
     { name: "Node.js", icon: SiNodedotjs },
     { name: "Express", icon: SiExpress },
