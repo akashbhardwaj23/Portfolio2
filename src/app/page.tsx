@@ -1,4 +1,3 @@
-
 import Background from "@/components/backgroundcomponent";
 import IntroComponent from "@/components/intro";
 

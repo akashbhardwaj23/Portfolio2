@@ -13,14 +13,12 @@
     "@tailwindcss/postcss": "^4.0.15",
     "clsx": "^2.1.1",
     "lucide-react": "^0.483.0",
-    "motion": "^12.5.0",
+    "motion": "^12.6.3",
     "next": "^15.2.3",
     "npm-check-updates": "^17.1.16",
-    "pdfjs-dist": "^5.0.375",
     "portfolio": "file:",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-icon-cloud": "^4.1.7",
     "react-icons": "^5.5.0",
     "tailwind-merge": "^3.0.2",
     "tailwindcss": "^4.0.15"
@@ -32,7 +30,6 @@
     "autoprefixer": "^10.4.21",
     "eslint": "^9",
     "eslint-config-next": "^15.2.3",
-    "next-connect": "^1.0.0",
     "postcss": "^8.5.3",
     "typescript": "^5"
   }
