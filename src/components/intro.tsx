@@ -25,7 +25,7 @@ const IntroComponent = () => {
             viewBox="0 0 325 71"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute -left-2 -top-4 right-2"
+            className="absolute -left-4 -top-4"
           >
             <motion.path
             initial={{pathLength : 0}}
