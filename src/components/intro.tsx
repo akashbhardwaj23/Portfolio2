@@ -17,7 +17,7 @@ const IntroComponent = () => {
       }}
       className="max-w-7xl mx-auto"
     >
-      <div className="flex justify-between items-center mb-12 bg-[#000000] border-2 border-[#33ff33] p-4">
+      <div className="flex flex-col sm:flex-row gap-20 sm:gap-0 justify-between items-center mb-12 bg-[#000000] border-2 border-[#33ff33] p-4">
         <div>
           <h1 className="relative text-2xl md:text-4xl font-bold mb-2 text-[#33ff33]">
             Akash Bhardwaj

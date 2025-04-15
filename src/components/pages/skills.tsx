@@ -10,7 +10,7 @@ export default function Skills(){
 
 
     return (
-      <motion.div className="bg-[#000000] border-2 border-[#33ff33] p-4">
+      <motion.div className="hidden sm:block bg-[#000000] border-2 border-[#33ff33] p-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {skills.map((skill, index) => (
               <motion.div

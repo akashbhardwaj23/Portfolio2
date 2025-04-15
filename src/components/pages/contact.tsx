@@ -8,7 +8,7 @@ import { useState } from "react";
 const Contact = () => {
   const [contactItemId, setContactItemId] = useState<number | null>(null);
   return (
-    <div className="flex flex-col justify-center item-center md:gap-1 mb-2">
+    <div className="flex flex-col justify-center items-start md:gap-1 mb-2">
       <h1>Connect With Me</h1>
       <div className="flex items-center justify-center gap-2">
         {contactItems.map((contactItem, index) => {
